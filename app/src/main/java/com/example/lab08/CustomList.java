@@ -29,5 +29,14 @@ public class CustomList {
         return cities.contains(city);
     }
 
+    /**
+     * This returns the number of cities in the list
+     *
+     * @return          Number of cities in the list
+     */
+    public int countCities() {
+        // Return how many cities are in the list
 
+        return cities.size();
+    }
 }

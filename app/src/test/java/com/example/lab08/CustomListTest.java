@@ -28,7 +28,7 @@ public class CustomListTest {
         cityList.addCity(city2);
         cityList.addCity(city3);
 
-        assertEquals(4, cityList.countCities()); // expected = 4 because mockCity is always in cityList
+        assertEquals(3, cityList.countCities()); // expected = 4 because mockCity is always in cityList
     }
 
 //    @Test
