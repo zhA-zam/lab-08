@@ -2,6 +2,7 @@ package com.example.lab08;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 public class CustomList {
     private List<City> cities;
@@ -38,5 +39,20 @@ public class CustomList {
         // Return how many cities are in the list
 
         return cities.size();
+    }
+
+    /**
+     * This deletes an existing city from the list
+     *
+     * @param city      city object
+     */
+    public void deleteCity(City city) {
+        // Check if a city is present in the list. If it does then remove
+        // it from the list, if not then **throw an exception**
+        if (cities.contains(city)) {
+            cities.remove(city);
+        } else {
+            throw new NoSuchElementException();
+        }
     }
 }
